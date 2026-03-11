@@ -19,44 +19,44 @@ typedef struct {
 void temperature_monitor(Device *device) {
     printf("Temp Sensor [%s]: %.2f°C ", device->name, device->reading.temperature);
     if (device->reading.temperature > 40) {
-        printf("⚠️  HIGH TEMP\n");
+        printf("HIGH TEMP\n");
     } else if (device->reading.temperature < 0) {
-        printf("⚠️  LOW TEMP\n");
+        printf("LOW TEMP\n");
     } else {
-        printf("✓ Normal\n");
+        printf("Normal\n");
     }
 }
 
 void pressure_monitor(Device *device) {
     printf("Pressure Sensor [%s]: %d hPa ", device->name, device->reading.pressure);
     if (device->reading.pressure > 1050) {
-        printf("⚠️  HIGH PRESSURE\n");
+        printf("HIGH PRESSURE\n");
     } else if (device->reading.pressure < 950) {
-        printf("⚠️  LOW PRESSURE\n");
+        printf("LOW PRESSURE\n");
     } else {
-        printf("✓ Normal\n");
+        printf("Normal\n");
     }
 }
 
 void voltage_monitor(Device *device) {
     printf("Power Sensor [%s]: %.2fV ", device->name, device->reading.voltage);
     if (device->reading.voltage < 2.0) {
-        printf("⚠️  LOW BATTERY\n");
+        printf("LOW BATTERY\n");
     } else if (device->reading.voltage > 5.0) {
-        printf("⚠️  OVERVOLTAGE\n");
+        printf("OVERVOLTAGE\n");
     } else {
-        printf("✓ Normal\n");
+        printf("Normal\n");
     }
 }
 
 // Custom callback: Alert system
 void alert_system(Device *device) {
     if (device->type == 1 && (device->reading.temperature > 50 || device->reading.temperature < -10)) {
-        printf("🚨 CRITICAL ALERT: %s temperature critical!\n", device->name);
+        printf("CRITICAL ALERT: %s temperature critical!\n", device->name);
     } else if (device->type == 2 && (device->reading.pressure > 1100 || device->reading.pressure < 900)) {
-        printf("🚨 CRITICAL ALERT: %s pressure critical!\n", device->name);
+        printf("CRITICAL ALERT: %s pressure critical!\n", device->name);
     } else if (device->type == 3 && device->reading.voltage < 1.5) {
-        printf("🚨 CRITICAL ALERT: %s power critical!\n", device->name);
+        printf("CRITICAL ALERT: %s power critical!\n", device->name);
     }
 }
 
