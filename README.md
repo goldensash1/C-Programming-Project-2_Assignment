@@ -116,12 +116,3 @@ gcc -o device_monitoring_simulator device_monitoring_simulator.c
 - Pointer callbacks: `process_device()`
 - Random number generation
 
----
-
-## Notes
-
-- All code is simple and readable as requested
-- Minimal but effective error handling
-- Menu-driven interfaces for easy testing
-- Proper memory management (malloc/free)
-- Clean pointer usage throughout
