@@ -3,7 +3,7 @@
 All three projects have been successfully created and compiled!
 
 ## Project 1: Dynamic Student Record Engine
-**File:** `project1.c`
+**File:** `student_record_engine.c`
 
 ### Features:
 - ✓ Uses dynamic memory allocation for student records
@@ -14,7 +14,7 @@ All three projects have been successfully created and compiled!
 
 ### How to Run:
 ```bash
-./project1
+./student_record_engine
 ```
 
 ### Operations:
@@ -28,7 +28,7 @@ All three projects have been successfully created and compiled!
 ---
 
 ## Project 2: Adaptive Text Intelligence Tool
-**File:** `project2.c`
+**File:** `text_intelligence_tool.c`
 
 ### Features:
 - ✓ Dynamic memory allocation for text storage
@@ -40,7 +40,7 @@ All three projects have been successfully created and compiled!
 
 ### How to Run:
 ```bash
-./project2
+./text_intelligence_tool
 ```
 
 ### Operations:
@@ -56,7 +56,7 @@ All three projects have been successfully created and compiled!
 ---
 
 ## Project 3: Callback-Based Device Monitoring Simulator
-**File:** `project3.c`
+**File:** `device_monitoring_simulator.c`
 
 ### Features:
 - ✓ Union-based device readings
@@ -68,7 +68,7 @@ All three projects have been successfully created and compiled!
 
 ### How to Run:
 ```bash
-./project3
+./device_monitoring_simulator
 ```
 
 ### Device Types:
@@ -88,9 +88,9 @@ All three projects have been successfully created and compiled!
 
 All projects compile without errors:
 ```bash
-gcc -o project1 project1.c
-gcc -o project2 project2.c
-gcc -o project3 project3.c
+gcc -o student_record_engine student_record_engine.c
+gcc -o text_intelligence_tool text_intelligence_tool.c
+gcc -o device_monitoring_simulator device_monitoring_simulator.c
 ```
 
 ## Key Concepts Demonstrated
